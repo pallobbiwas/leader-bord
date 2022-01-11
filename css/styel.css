@@ -27,6 +27,46 @@ hr{
     margin: 29px 0;
 
 }
+/* header section  */
+.header{
+    background-color: rgb(75, 75, 243);
+    display: flex;
+}
+.header-container{
+    width: 870px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo .headepra{
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+.menu ul{
+    display: flex;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.menu ul li{
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+}
 /* section,top players */
 .sectio-title{
     color: #562EFF;
@@ -148,6 +188,27 @@ hr{
     .sectio-title{
         text-align: center;
     }
+    .header-container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .logo{
+        flex-direction: column;
+    }
+    .logo .headepra{
+        font-size: 1.5em;
+    }
+    .menu ul{
+        display: inline;
+    }
+    .menu ul li{
+        font-size: 1.4em;
+        margin-bottom: 5px;
+    }
+    .menu ul li img{
+        display: none;
+    }
 }
 /* for tablet */
 @media only screen and (min-width: 688px) and (max-width:992px) {
@@ -169,6 +230,10 @@ hr{
     .cours{
         width: 80%;
         padding: 5px;
+    }
+    .header{
+        width: 100%;
+        padding: 0 10px;
     }
   
 }
